@@ -3,10 +3,43 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Rock Paper Scissors</title>
+    <script src="js/script.js" defer></script>
   </head>
 
   <body>
-    <script src="js/script.js"></script>
+    <div id="flex-container">
+      <div id="header">
+        <h1>Rock Paper Scissors</h1>
+        <p>Game ends after someone obtains 5 points</p>
+      </div>
+      <div id="main">
+        <div id="score-display">
+          <h5 id="cscore-title">Computer's Score: <span id="computer-score"></span></h5>
+          <h5 id="pscore-title">Player's Score: <span id="player-score"></span></h5>
+        </div>
+        <div id="decision-display">
+          <div class="decision">
+            <h4>Your Choice</h4>
+            <p id="p-choice-display">???</p>
+          </div>
+          <div class="decision">
+            <h4>Computer's Choice</h4>
+            <p id="c-choice-display">???</p>
+          </div>
+        </div>
+        <div id="result-btns">
+          <div id="result">
+            <h3 id="result-txt">Choose an action!</h3>
+          </div>
+          <div id="btn-container">
+            <button class="choice-btn" id="rock">Rock</button>
+            <button class="choice-btn" id="paper">Paper</button>
+            <button class="choice-btn" id="scissors">Scissors</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
